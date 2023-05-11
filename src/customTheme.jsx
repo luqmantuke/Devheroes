@@ -54,9 +54,10 @@ const customTheme = extendTheme({
       ],
     colors: {
       brand: {
-        yellow: "#e5a725",
-        green: "#1c6e39",
-        darkGreen: "#12311c",
+        purpleOne: "#f0f0f7",
+        purpleTwo: "#605cba",
+        purpleThree: "#5e5ebc",
+
 
       },
     

@@ -59,6 +59,8 @@ const customTheme = extendTheme({
         purpleThree: "#5e5ebc",
         whiteColor: "#ffffff",
         purpleFour: "#343f52",
+        blackOne: "#344051",
+        blackTwo: "#6a7383"
 
       },
     

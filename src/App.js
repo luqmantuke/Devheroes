@@ -1,8 +1,10 @@
 import React from 'react'
-
+import { BannerApp } from './components/componentIndex'
 const App = () => {
   return (
-    <div>App</div>
+    <>
+   < BannerApp/>
+    </>
   )
 }
 

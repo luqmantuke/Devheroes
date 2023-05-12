@@ -1,16 +1,16 @@
 import React from 'react'
-import {Box,Flex,Text,Card,CardHeader,Avatar,Heading,CardBody,Image} from '@chakra-ui/react'
+import {Box,Flex,Text,Card,CardHeader,Avatar,Heading,CardBody} from '@chakra-ui/react'
 
-const TestimonialCard = () => (<Card maxW='sm'  margin={2} >
+const TestimonialCard = ({avatarName,avatarImage,avatarStatus,testimonial}) => (<Card maxW='sm'  margin={2} >
          
    <CardHeader>
      <Flex spacing='4'>
        <Flex  flex='1' gap='4'  alignItems='center' flexWrap='wrap'>
-         <Avatar name='Frank Manyinyi' src='https://bit.ly/sage-adebayo' />
+         <Avatar name={avatarName} src={avatarImage} />
        
          <Box>
-           <Heading size='sm'>Frank Manyinyi</Heading>
-           <Text>Academic Master,Edmund Rice</Text>
+           <Heading size='sm'>{avatarName}</Heading>
+           <Text>{avatarStatus}</Text>
          </Box>
        </Flex>
              
@@ -18,7 +18,7 @@ const TestimonialCard = () => (<Card maxW='sm'  margin={2} >
    </CardHeader>
    <CardBody>
      <Text>
-     We have been using the DevHeroes Timetable solution for the past few months at Edmund Rice Sinon Secondary School, and it has been a game-changer for us. The solution has significantly reduced the workload of our academic staff, enabling them to focus more on teaching and engaging with students. <br /> <br/>
+ {testimonial}
 
      </Text>
    </CardBody>
@@ -43,10 +43,9 @@ const Testimonial = () => {
         <Box pt={10} pb={10}>
             <Flex alignItems='center'  justifyContent='space-around' direction={{md:'column',lg:'row',sm:'column',base:'column'}} >
 
-        <TestimonialCard />
-        <TestimonialCard />
-        <TestimonialCard />
-
+        <TestimonialCard avatarName='Frank Manyinyi' avatarImage='https://bit.ly/sage-adebayo' avatarStatus='Academic Master,Edmund Rice' testimonial='    We have been using the DevHeroes Timetable solution for the past few months at Edmund Rice Sinon Secondary School, and it has been a game-changer for us. The solution has significantly reduced the workload of our academic staff, enabling them to focus more on teaching and engaging with students. '  />
+    
+        <TestimonialCard avatarName='Frank Manyinyi' avatarImage='https://bit.ly/sage-adebayo' avatarStatus='Academic Master,Edmund Rice' testimonial='    We have been using the DevHeroes Timetable solution for the past few months at Edmund Rice Sinon Secondary School, and it has been a game-changer for us. The solution has significantly reduced the workload of our academic staff, enabling them to focus more on teaching and engaging with students. '  />   <TestimonialCard avatarName='Frank Manyinyi' avatarImage='https://bit.ly/sage-adebayo' avatarStatus='Academic Master,Edmund Rice' testimonial='    We have been using the DevHeroes Timetable solution for the past few months at Edmund Rice Sinon Secondary School, and it has been a game-changer for us. The solution has significantly reduced the workload of our academic staff, enabling them to focus more on teaching and engaging with students. '  />
 
             </Flex>
 </Box>

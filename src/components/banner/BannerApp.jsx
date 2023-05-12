@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box,Flex,Text,Heading,Image} from '@chakra-ui/react'
+import {Box,Flex,Text,Heading,Image,Button} from '@chakra-ui/react'
 import { BannerOne } from '../../utilities/assetIndex'
 
 const BannerApp = () => {
@@ -14,6 +14,9 @@ const BannerApp = () => {
         <Text pt={7} color='brand.blackTwo' fontSize={20}>
         Say goodbye to manual timetabling and <br/> hello to efficiency and accuracy with our <br/>innovative technology.
         </Text>
+        <Button backgroundColor='brand.purpleTwo' color='brand.whiteColor'   width={{md:'30%',sm:'30%',base:'30%', 'lg': '20%'}}  py={6} mt={5}>
+    Get Started
+  </Button>
       </Flex>
     </Box>
 

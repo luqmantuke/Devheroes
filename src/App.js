@@ -1,9 +1,10 @@
 import React from 'react'
-import { BannerApp } from './components/componentIndex'
+import { BannerApp,WhyChooseUs } from './components/componentIndex'
 const App = () => {
   return (
     <>
    < BannerApp/>
+   <WhyChooseUs/>
     </>
   )
 }

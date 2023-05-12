@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box,Flex,Text,Heading,Image,Button} from '@chakra-ui/react'
+import {Box,Flex,Text} from '@chakra-ui/react'
 
 const WhyUsFlex = ({number,title,description}) => (<Box>
 
@@ -19,7 +19,7 @@ const WhyUsFlex = ({number,title,description}) => (<Box>
 
 const WhyChooseUs = () => {
   return (
-   <Box  backgroundColor='brand.whiteTwo' boxSize='container.lg'  width='100%' >
+   <Box  backgroundColor='brand.whiteTwo' pb={40} width='100%' >
 
     
     <Flex direction='column'>

@@ -18,7 +18,7 @@ const BannerApp = () => {
     </Box>
 
     {/* Second Box to display banner image */}
-    <Box width={{md:'100%',sm:'100%',base:'100%'}} height='100%'   flex={1} flexGrow={1}>
+    <Box width={{md:'100%',sm:'100%',base:'100%'}}    flex={1} flexGrow={1}>
       <Image    src={BannerOne} />
     </Box>
 </Flex>

@@ -62,7 +62,9 @@ const customTheme = extendTheme({
         blackOne: "#344051",
         blackTwo: "#6a7383",
         whiteTwo: "#fcfcfd",
-        blueOne: "#4872d7"
+        blueOne: "#4872d7",
+        blueDark: "#343f52",
+        whiteThree: "#a4aec633"
 
       },
     

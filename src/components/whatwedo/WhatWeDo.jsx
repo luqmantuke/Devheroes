@@ -33,7 +33,7 @@ const WhatWeDoCard = ({title,image,description}) => (<Card
 const WhatWeDo = () => {
   return (
     <Box pl={{md:'5',lg:'10',sm:'5',base:'5'}} pb={20} backgroundColor='brand.whiteTwo' width='100%' >
-        <Flex  pt={20}  direction={{md:'column',lg:'row',sm:'column',base:'column'}}>
+        <Flex  pt={20} direction='column'>
             {/* First Box */}
             <Box>
                 <Flex flex={1} flexGrow={1} direction='column'>
@@ -43,20 +43,13 @@ const WhatWeDo = () => {
         <Text pt={6} color='brand.blackOne' fontWeight='semibold' fontSize={35}>
         Let DevHeroes be your hero <br/> and solve your technology problems.
         </Text>   
-        <Text color='brand.blackTwo' pt={6}>
-        Let DevHeroes be your hero and solve your technology problems.
-
-
-        </Text>
-        <Button backgroundColor='brand.purpleTwo' color='brand.whiteColor'   width={{md:'30%',sm:'30%',base:'30%', 'lg': '20%'}}  py={6} mt={5}>
-    More Details
-  </Button>
+       
                 </Flex>
             </Box>
 {/* Second Box */}
-<Box  overflowY='auto' height={{lg: '300px'}} maxWidth={{md: '100%', md: '100%', sm: '100%', lg: '50%'}}>
+<Box   maxWidth={{md: '100%', md: '100%', sm: '100%', lg: '70%'}}>
     
-    <Flex direction='column' flex={1}   >
+    <Flex  direction='column' flex={1}   >
 
     
     <WhatWeDoCard title='Timetable Creation' image={TimeTableCreation} description='Our technology takes into account all relevant constraints to provide a tailored solution that satisfies everyone involved. Say goodbye to scheduling headaches and hello to streamlined efficiency.' />

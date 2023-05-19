@@ -1,13 +1,21 @@
 import React from 'react'
 import {Box,Flex,Text,Divider, Button,IconButton} from '@chakra-ui/react'
 import {RiFacebookLine,RiInstagramLine,RiTwitterLine,RiLinkedinLine} from 'react-icons/ri'
-const TitleTryFree = () => (<Flex justifyContent='space-between' direction={{md:'column',lg:'row',sm:'column',base:'column'}} >
+import { useNavigate } from 'react-router-dom';
+const sendWhatsapp = () => {
+  window.location.href = "https://wa.me/+255716285421";
+};
+
+const redirectExcel  = (myNavigate)=>{
+ 
+}
+const TitleTryFree = ({myNavigate}) => (<Flex justifyContent='space-between' direction={{md:'column',lg:'row',sm:'column',base:'column'}} >
 
           <Text color='brand.whiteColor' fontSize={30} fontWeight='semibold'>
           Revolutionize school timetabling<br/> with DevHeroes.
           </Text>
 
-          <Button backgroundColor='brand.purpleTwo' color='brand.whiteColor'   width={{md:'25%',sm:'25%',base:'25%', 'lg': '10%'}}  py={6} mt={5}>
+          <Button onClick={sendWhatsapp} backgroundColor='brand.purpleTwo' color='brand.whiteColor'   width={{md:'25%',sm:'25%',base:'25%', 'lg': '10%'}}  py={6} mt={5}>
   Try for free
 </Button>
       </Flex>);
@@ -47,10 +55,12 @@ Arusha, Tanzania
   
 
 const Footer = () => {
+  const navigate = useNavigate()
   return (
+    
   <Box px={10} pt={10} pb={40} backgroundColor='brand.blueDark'  width='100%'>
     <Flex direction='column'>
-        <TitleTryFree />
+        <TitleTryFree myNavigate={navigate} />
         <Divider color='brand.whiteThree' pt={10} mb={10} orientation='horizontal' />
         <Flex  direction={{md:'column',lg:'row',sm:'column',base:'column'}} >
     <Flex direction='row'>

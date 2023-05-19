@@ -1,13 +1,17 @@
 import React from 'react'
 import {Box,Flex,Text,Divider, Button,IconButton} from '@chakra-ui/react'
 import {RiFacebookLine,RiInstagramLine,RiTwitterLine,RiLinkedinLine} from 'react-icons/ri'
+const sendWhatsapp = () => {
+  window.location.href = "https://wa.me/+255716285421";
+};
+
 const TitleTryFree = () => (<Flex justifyContent='space-between' direction={{md:'column',lg:'row',sm:'column',base:'column'}} >
 
           <Text color='brand.whiteColor' fontSize={30} fontWeight='semibold'>
           Revolutionize school timetabling<br/> with DevHeroes.
           </Text>
 
-          <Button backgroundColor='brand.purpleTwo' color='brand.whiteColor'   width={{md:'25%',sm:'25%',base:'25%', 'lg': '10%'}}  py={6} mt={5}>
+          <Button onClick={sendWhatsapp} backgroundColor='brand.purpleTwo' color='brand.whiteColor'   width={{md:'25%',sm:'25%',base:'25%', 'lg': '10%'}}  py={6} mt={5}>
   Try for free
 </Button>
       </Flex>);

@@ -2,6 +2,10 @@ import React from 'react'
 import {Box,Flex,Text,Heading,Image,Button} from '@chakra-ui/react'
 import { BannerOne } from '../../utilities/assetIndex'
 
+const sendWhatsapp = () => {
+  window.location.href = "https://wa.me/+255716285421";
+};
+
 const BannerApp = () => {
   return (
    <Box backgroundColor='brand.purpleOne'   width='100%'  >
@@ -14,7 +18,7 @@ const BannerApp = () => {
         <Text pt={7} color='brand.blackTwo' fontSize={20}>
         Say goodbye to manual timetabling and <br/> hello to efficiency and accuracy with our <br/>innovative technology.
         </Text>
-        <Button backgroundColor='brand.purpleTwo' color='brand.whiteColor'   width={{md:'30%',sm:'30%',base:'30%', 'lg': '20%'}}  py={6} mt={5}>
+        <Button onClick={sendWhatsapp} backgroundColor='brand.purpleTwo' color='brand.whiteColor'   width={{md:'30%',sm:'30%',base:'30%', 'lg': '20%'}}  py={6} mt={5}>
     Get Started
   </Button>
       </Flex>

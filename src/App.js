@@ -1,5 +1,5 @@
 import React from 'react'
-import { BannerApp,WhyChooseUs,Testimonial,WhatWeDo,Footer,TimetableTemplate } from './components/componentIndex'
+import { BannerApp,WhyChooseUs,RegisterSchool,WhatWeDo,Footer,TimetableTemplate } from './components/componentIndex'
 
 import { BrowserRouter as Router, Route, useNavigate, Routes, createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -21,7 +21,11 @@ const App = () => {
       element: <TimetableTemplate />,
     
     },
-
+    {
+      path: "/register-school",
+      element: <RegisterSchool />,
+    
+    },
 
   ])
   return (

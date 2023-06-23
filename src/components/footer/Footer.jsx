@@ -6,7 +6,8 @@ const sendWhatsapp = () => {
   window.location.href = "https://wa.me/+255716285421";
 };
 
-const redirectExcel  = (myNavigate)=>{
+const airtableRegistration  = (myNavigate)=>{
+  myNavigate.to('register-school')
  
 }
 const TitleTryFree = ({myNavigate}) => (<Flex justifyContent='space-between' direction={{md:'column',lg:'row',sm:'column',base:'column'}} >
